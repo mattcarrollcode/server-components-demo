@@ -6,7 +6,9 @@
  *
  */
 
-import {createRoot} from 'react-dom';
+'use client';
+
+import {createRoot} from 'react-dom/client';
 import Root from './Root.client';
 
 const initialCache = new Map();

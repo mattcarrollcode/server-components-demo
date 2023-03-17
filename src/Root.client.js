@@ -6,7 +6,10 @@
  *
  */
 
-import {useState, Suspense} from 'react';
+'use client';
+
+import {useState, Suspense, ReactCurrentCache} from 'react';
+import * as React from 'react';
 import {ErrorBoundary} from 'react-error-boundary';
 
 import {useServerResponse} from './Cache.client';

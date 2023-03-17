@@ -6,6 +6,8 @@
  *
  */
 
+'use client';
+
 import {useState, useRef, useEffect, useTransition} from 'react';
 
 import {useLocation} from './LocationContext.client';

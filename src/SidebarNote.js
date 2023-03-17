@@ -8,7 +8,7 @@
 
 import {format, isToday} from 'date-fns';
 import excerpts from 'excerpts';
-import marked from 'marked';
+import {marked} from 'marked';
 
 import ClientSidebarNote from './SidebarNote.client';
 

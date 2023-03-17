@@ -6,10 +6,7 @@
  *
  */
 
-import {fetch} from 'react-fetch';
-import {readFile} from 'react-fs';
 import {format} from 'date-fns';
-import path from 'path';
 
 import NotePreview from './NotePreview';
 import EditButton from './EditButton.client';

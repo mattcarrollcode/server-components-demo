@@ -6,8 +6,6 @@
  *
  */
 
-import {fetch} from 'react-fetch';
-
 import {db} from './db.server';
 import SidebarNote from './SidebarNote';
 

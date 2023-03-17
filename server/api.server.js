@@ -22,7 +22,7 @@ const express = require('express');
 const compress = require('compression');
 const {readFileSync} = require('fs');
 const {unlink, writeFile} = require('fs').promises;
-const {renderToPipeableStream} = require('react-server-dom-webpack/writer');
+const {renderToPipeableStream} = require('react-dom/server');
 const path = require('path');
 const {Pool} = require('pg');
 const React = require('react');
@@ -89,7 +89,7 @@ app.get(
 async function renderReactTree(res, props) {
   await waitForWebpack();
   const manifest = readFileSync(
-    path.resolve(__dirname, '../build/react-client-manifest.json'),
+    path.resolve(__dirname, '../build/main.js.map'),
     'utf8'
   );
   const moduleMap = JSON.parse(manifest);
